@@ -2,6 +2,13 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
 
+This is a toy project to learn Angular CLI, and to practice my skills as well as learning 
+some of the functionalities of Angular.
+
+The API access via the web does not really work anymore, it may need to be installed locally
+via https://github.com/hiteshchoudhary/apihub.git something that I have not done as I use it
+only for this toy project and practise purposes. 
+
 ## Development server
 
 To start a local development server, run:

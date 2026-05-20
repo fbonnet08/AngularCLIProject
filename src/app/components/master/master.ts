@@ -1,0 +1,16 @@
+import { Component } from '@angular/core';
+import {Designation} from '../designation/designation';
+import {Roles} from '../roles/roles';
+import {CommandModule} from '@angular/cli/src/command-builder/command-module';
+import {CommonModule} from '@angular/common';
+
+@Component({
+  selector: 'app-master',
+  imports: [Designation, Roles, CommonModule],
+  templateUrl: './master.html',
+  styleUrl: './master.css',
+})
+export class Master {
+  currentComponent: string = 'Roles';
+  changeTab(tabName: string){this.currentComponent = tabName;}
+}

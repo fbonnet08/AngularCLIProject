@@ -1,0 +1,13 @@
+export const Constant = {
+
+  API_METHOD: {
+    GET_ALL_EMPLOYEES: 'GetAllEmployee',
+    GET_ALL_CLIENT: 'GetAllClients'
+
+  },
+
+  VALIDATION_MESSAGE: {
+    REQUIRED: 'This is required',
+  }
+
+}

@@ -1,0 +1,22 @@
+
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Sr no</th>
+        <th>Role name</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr *ngFor="let role of rolesList; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ role.role }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+

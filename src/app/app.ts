@@ -1,10 +1,18 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {MatButtonToggle} from '@angular/material/button-toggle';
+import {Master} from './components/master/master';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MatButtonToggle],
+  imports: [
+    RouterOutlet,
+    MatButtonToggle,
+    Master,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
