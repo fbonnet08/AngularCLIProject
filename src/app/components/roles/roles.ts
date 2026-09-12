@@ -1,8 +1,8 @@
 import { Component, inject, OnInit } from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpClient} from '@angular/common/http';
 import {APIResponseModel, IRole} from '../../model/interface/role';
 import {CommonModule} from '@angular/common';
+import {MasterService} from '../../services/master.service';
 
 @Component({
   selector: 'app-roles',
@@ -14,15 +14,14 @@ import {CommonModule} from '@angular/common';
 export class Roles implements OnInit {
 
   rolesList : IRole [] = [];
-  http = inject(HttpClient);
+  masterService = inject(MasterService);
 
   ngOnInit(): void {
     this.getAllRoles();
   }
 
   getAllRoles(){
-    this.http.get<APIResponseModel>(
-      "/api/ClientStrive/GetAllRoles").subscribe((res:APIResponseModel) =>
+    this.masterService.getRoles().subscribe((res:APIResponseModel) =>
       {this.rolesList = res.data;}
     )
    }

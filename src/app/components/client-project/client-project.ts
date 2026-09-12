@@ -57,7 +57,7 @@ export class ClientProject implements OnInit {
   }
 
   getAllClient(){
-    this.clientSrv.getAllEmployees().subscribe((res:APIResponseModel)=>
+    this.clientSrv.getAllClients().subscribe((res:APIResponseModel)=>
     {
       this.clientList = res.data;
     })

@@ -1,7 +1,6 @@
 import { Component, signal } from '@angular/core';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import {MatButtonToggle} from '@angular/material/button-toggle';
-import {Master} from './components/master/master';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
@@ -9,7 +8,6 @@ import {HttpClient} from '@angular/common/http';
   imports: [
     RouterOutlet,
     MatButtonToggle,
-    Master,
     RouterLink,
     RouterLinkActive
   ],
